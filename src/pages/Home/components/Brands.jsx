@@ -1,12 +1,21 @@
+import {
+  brandImg1,
+  brandImg2,
+  brandImg3,
+  brandImg4,
+  brandImg5,
+  brandImg6,
+  brandImg7,
+} from "../constants";
 const Brands = () => {
   const brandIcon = [
-    "https://learningcenter-ruslan.vercel.app//src/pages/home/constants/Vector(1).png",
-    "https://learningcenter-ruslan.vercel.app//src/pages/home/constants/Vector(2).png",
-    "https://learningcenter-ruslan.vercel.app//src/pages/home/constants/Vector(3).png",
-    "https://learningcenter-ruslan.vercel.app//src/pages/home/constants/Vector(4).png",
-    "https://learningcenter-ruslan.vercel.app//src/pages/home/constants/Logo.png",
-    "https://learningcenter-ruslan.vercel.app//src/pages/home/constants/Vector(5).png",
-    "https://learningcenter-ruslan.vercel.app//src/pages/home/constants/Vector(6).png",
+    brandImg1,
+    brandImg2,
+    brandImg3,
+    brandImg4,
+    brandImg5,
+    brandImg6,
+    brandImg7,
   ];
   return (
     <>
