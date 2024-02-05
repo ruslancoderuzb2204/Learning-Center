@@ -5,6 +5,7 @@ import OurPricing from "./components/OurPricing";
 import Potential from "./components/Potential";
 import Questions from "./components/Questions";
 import Testimonials from "./components/Testimonials";
+import { containerImg } from "./constants";
 
 const Home = () => {
   return (
@@ -14,8 +15,8 @@ const Home = () => {
       <div>
         <img
           className="h-1/2 w-full"
-          src="./src/pages/home/constants/Container.png"
-          alt=""
+          src={containerImg}
+          alt="img"
         />
       </div>
       <Benefits />

@@ -1,10 +1,18 @@
 import Header from "../../../components/innerHeader";
 import OurCoursesCard from "../Containers/OurCoursesCard";
+import {
+  coursesImg1,
+  coursesImg2,
+  coursesImg3,
+  coursesImg4,
+  coursesImg5,
+  coursesImg6,
+} from "../constants";
 
 const OurCourses = () => {
   const data = [
     {
-      img: "http://localhost:5173/src/pages/home/constants/image1.png",
+      img: coursesImg1,
       time: "4 weeks",
       level: "Beginner",
       author: "By John",
@@ -12,7 +20,7 @@ const OurCourses = () => {
       text: "Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.",
     },
     {
-      img: "http://localhost:5173/src/pages/home/constants/image2.png",
+      img: coursesImg2,
       time: "6 weeks",
       level: "Intermidiate",
       author: "By Emily",
@@ -20,7 +28,7 @@ const OurCourses = () => {
       text: "Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.",
     },
     {
-      img: "http://localhost:5173/src/pages/home/constants/image3.png",
+      img: coursesImg3,
       time: "8 weeks",
       level: "Intermidiate",
       author: "By David ",
@@ -28,7 +36,7 @@ const OurCourses = () => {
       text: "Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.",
     },
     {
-      img: "http://localhost:5173/src/pages/home/constants/image4.png",
+      img: coursesImg4,
       time: "10 weeks",
       level: "Beginner",
       author: "By Sarah ",
@@ -36,7 +44,7 @@ const OurCourses = () => {
       text: "Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media..",
     },
     {
-      img: "http://localhost:5173/src/pages/home/constants/image5.png",
+      img: coursesImg5,
       time: "10 weeks",
       level: "Intermidiate",
       author: "By Michael",
@@ -44,7 +52,7 @@ const OurCourses = () => {
       text: "Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.",
     },
     {
-      img: "http://localhost:5173/src/pages/home/constants/image6.png",
+      img: coursesImg6,
       time: "6 weeks",
       level: "Advance",
       author: "By Jennifer",
