@@ -13,11 +13,7 @@ const Home = () => {
       <Potential />
       <Brands />
       <div>
-        <img
-          className="h-1/2 w-full"
-          src={containerImg}
-          alt="img"
-        />
+        <img className="h-1/2 w-full" src={containerImg} alt="img" />
       </div>
       <Benefits />
       <OurCourses />

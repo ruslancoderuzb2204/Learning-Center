@@ -12,10 +12,10 @@ import coursesImg3 from "./Image3.png";
 import coursesImg4 from "./Image4.png";
 import coursesImg5 from "./Image5.png";
 import coursesImg6 from "./Image6.png";
-import userImg1 from "./Img1";
-import userImg2 from "./Img2";
-import userImg3 from "./Img3";
-import userImg4 from "./Img4";
+import userImg1 from "./Img1.png";
+import userImg2 from "./Img2.png";
+import userImg3 from "./Img3.png";
+import userImg4 from "./Img4.png";
 
 export {
   brandImg1,
