@@ -24,8 +24,8 @@ const Questions = () => {
         </button>
       </div>
       <div className="p-16 w-2/3 md:w-full md:mt-3 border-2  rounded-lg lg:p-10 md:p-5">
-        {data.map((item) => (
-          <QuestionsCard item={item} />
+        {data.map((item,index) => (
+          <QuestionsCard key={index} item={item} />
         ))}
       </div>
     </div>

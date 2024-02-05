@@ -18,13 +18,19 @@ const OurPricingCard = ({ title, price, freePlanFalse, freePlanTrue }) => {
         </h3>
         <div>
           {freePlanTrue.map((item) => (
-            <div className="flex items-center gap-4 md:gap-2 sm:gap-1 border-2 rounded-lg pl-10 lg:pl-8 md:pl-6 sm:pl-4 xs:pl-2 py-4 mt-6 md:mt-4 sm:mt-2 text-lg lg:text-base md:text-sm">
+            <div
+              key={item}
+              className="flex items-center gap-4 md:gap-2 sm:gap-1 border-2 rounded-lg pl-10 lg:pl-8 md:pl-6 sm:pl-4 xs:pl-2 py-4 mt-6 md:mt-4 sm:mt-2 text-lg lg:text-base md:text-sm"
+            >
               <span className="bg-[#FFF4E6] rounded-md p-2">✔️</span>
               <p>{item}</p>
             </div>
           ))}
           {freePlanFalse.map((item) => (
-            <div className="flex items-center gap-4 md:gap-2 sm:gap-1 border-2 rounded-lg pl-10 lg:pl-8 md:pl-6 sm:pl-4 xs:pl-2 py-4 mt-6 md:mt-4 sm:mt-2 text-lg lg:text-base md:text-sm">
+            <div
+              key={item}
+              className="flex items-center gap-4 md:gap-2 sm:gap-1 border-2 rounded-lg pl-10 lg:pl-8 md:pl-6 sm:pl-4 xs:pl-2 py-4 mt-6 md:mt-4 sm:mt-2 text-lg lg:text-base md:text-sm"
+            >
               <span className="bg-[#FFF4E6] rounded-md p-2">❌</span>
               <p>{item}</p>
             </div>

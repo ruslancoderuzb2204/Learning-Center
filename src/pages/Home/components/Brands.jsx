@@ -28,8 +28,8 @@ const Brands = () => {
       </div>
       <div className="bg-white hidden sm:flex  items-center justify-between p-4 md:p-2 md:mt-5 rounded-lg mt-10">
         {brandIcon.slice(0, 3).map((icon) => (
-          <div className="px-6 py-4 md:px-3 md:py-2">
-            <img src={icon} className="lg:w-16" alt="img" />
+          <div key={icon} className="px-6 py-4 md:px-3 md:py-2">
+            <img key={icon} src={icon} className="lg:w-16" alt="img" />
           </div>
         ))}
       </div>

@@ -1,7 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+
   theme: {
+    extend: {
+      keyframes: {
+        wiggle: {
+          "0%, 100%": { transform: "rotate(-3deg)" },
+          "50%": { transform: "rotate(3deg)" },
+        },
+      },
+    },
     screens: {
       "3xl": { max: "1920px" },
 
@@ -14,7 +23,6 @@ export default {
 
       sm: { max: "740px" },
       xs: { max: "450px" },
-
     },
   },
   plugins: [],

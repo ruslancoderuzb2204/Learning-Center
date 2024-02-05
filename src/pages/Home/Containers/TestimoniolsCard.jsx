@@ -1,5 +1,3 @@
-import React from "react";
-
 const TestimoniolsCard = ({ img, name, text }) => {
   return (
     <div className="bg-white p-12 lg:p-8 md:p-4 rounded-lg">

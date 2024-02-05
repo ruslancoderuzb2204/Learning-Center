@@ -1,9 +1,15 @@
 import { NavLink } from "react-router-dom";
 import { Logo } from "../constants/Logo";
-
+import { useState } from "react";
+import Modal from "./Modal";
 const Header = () => {
+  const [openModal, setOpenModal] = useState(false);
+  const toogleModal = () => {
+    setOpenModal(true);
+  };
+
   return (
-    <div className="max-w-[1920px] mx-auto md:text-sm">
+    <div className="max-w-[1920px] relative mx-auto md:text-sm">
       <div className=" mx-auto flex items-center gap-4 justify-center text-white md:py-2 md:px-4  py-5 px-7 rounded-lg bg-[#FF9500]">
         <p>Free Courses 🌟 Sale Ends Soon, Get It Now</p>
         <i className="fa-solid text-white fa-arrow-right"></i>
@@ -68,9 +74,10 @@ const Header = () => {
             </NavLink>
           </div>
           <div className="hidden sm:block">
-            <button className="p-2">
+            <button onClick={toogleModal} className="p-2">
               <i className="fa-solid fa-bars "></i>
             </button>
+            <div>{openModal && <Modal setOpenModal={setOpenModal} />}</div>
           </div>
         </div>
       </div>

@@ -1,5 +1,3 @@
-import React from "react";
-
 const OurCoursesCard = ({ title, text, time, author, img, level }) => {
   return (
     <div className="p-10 lg:p-7 md:p-5 rounded-lg  w-full h-full bg-white">
