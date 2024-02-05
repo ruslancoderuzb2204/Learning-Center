@@ -1,12 +1,12 @@
 const Brands = () => {
   const brandIcon = [
-    "http://localhost:5173/src/pages/home/constants/Vector(1).png",
-    "http://localhost:5173/src/pages/home/constants/Vector(2).png",
-    "http://localhost:5173/src/pages/home/constants/Vector(3).png",
-    "http://localhost:5173/src/pages/home/constants/Vector(4).png",
-    "http://localhost:5173/src/pages/home/constants/Logo.png",
-    "http://localhost:5173/src/pages/home/constants/Vector(5).png",
-    "http://localhost:5173/src/pages/home/constants/Vector(6).png",
+    "./src/pages/home/constants/Vector(1).png",
+    "./src/pages/home/constants/Vector(2).png",
+    "./src/pages/home/constants/Vector(3).png",
+    "./src/pages/home/constants/Vector(4).png",
+    "./src/pages/home/constants/Logo.png",
+    "./src/pages/home/constants/Vector(5).png",
+    "./src/pages/home/constants/Vector(6).png",
   ];
   return (
     <>

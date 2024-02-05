@@ -14,7 +14,7 @@ const Home = () => {
       <div>
         <img
           className="h-1/2 w-full"
-          src="http://localhost:5173/src/pages/home/constants/Container.png"
+          src="./src/pages/home/constants/Container.png"
           alt=""
         />
       </div>
