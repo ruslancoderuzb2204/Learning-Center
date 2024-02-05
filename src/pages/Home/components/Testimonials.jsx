@@ -27,7 +27,7 @@ const Testimonials = () => {
   return (
     <div>
       <Header title={"Our Testimonials"} />
-      <div className="grid grid-cols-2 gap-10 lg:gap-6 md:gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-1 gap-10 lg:gap-6 md:gap-4">
         {data.map((item) => (
           <TestimoniolsCard key={item.title} {...item} />
         ))}

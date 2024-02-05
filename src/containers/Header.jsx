@@ -8,12 +8,12 @@ const Header = () => {
         <p>Free Courses 🌟 Sale Ends Soon, Get It Now</p>
         <i className="fa-solid text-white fa-arrow-right"></i>
       </div>
-      <div className="py-5 text-md flex md:py-3 md:px-5  items-center justify-between px-10  mx-auto ">
-        <div className="flex items-center   gap-20 lg:gap-16 md:gap-10  ">
+      <div className="py-5 text-md flex md:py-3 md:px-5   items-center justify-between px-10  mx-auto ">
+        <div className="flex items-center sm:block   gap-20 lg:gap-16 md:gap-10  ">
           <NavLink to="/">
             <Logo />
           </NavLink>
-          <nav>
+          <nav className="sm:hidden">
             <ul className="flex items-center gap-20 lg:gap-8 md:gap-4 ">
               <li>
                 <NavLink
@@ -58,13 +58,20 @@ const Header = () => {
             </ul>
           </nav>
         </div>
-        <div className="flex gap-2">
-          <NavLink className="px-4 py-2 bg-white rounded-md" to="login">
-            Sign Up
-          </NavLink>
-          <NavLink className="bg-[#FF9500] rounded-md px-4 py-2" to="login">
-            Login
-          </NavLink>
+        <div className="block sm:flex gap-2">
+          <div className="flex gap-2">
+            <NavLink className="px-4 py-2 bg-white rounded-md" to="login">
+              Sign Up
+            </NavLink>
+            <NavLink className="bg-[#FF9500] rounded-md px-4 py-2" to="login">
+              Login
+            </NavLink>
+          </div>
+          <div className="hidden sm:block">
+            <button className="p-2">
+              <i className="fa-solid fa-bars "></i>
+            </button>
+          </div>
         </div>
       </div>
     </div>

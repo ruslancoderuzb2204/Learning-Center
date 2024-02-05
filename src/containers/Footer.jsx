@@ -4,12 +4,12 @@ import { Logo } from "../constants/Logo";
 const Footer = () => {
   return (
     <div>
-      <div className="bg-white text-lg  grid grid-cols-2 px-20 lg:px-10 md:px-5 pt-20 lg:pt-10 md:pt-5">
-        <div>
+      <div className="bg-white text-lg lg:text-base md:text-sm  grid grid-cols-2 md:grid-cols-1 md:gap-4 px-20 lg:px-10 md:px-5 pt-20 lg:pt-10 md:pt-5">
+        <div className="md:flex items-center gap-3">
           <NavLink to="/">
             <Logo />
           </NavLink>
-          <ul className="mt-10 lg:mt-6 mg:mt-3">
+          <ul className="mt-10 lg:mt-6 md:mt-3">
             <li className="flex items-center gap-2">
               <i className="fa-solid fa-envelope"></i>
               <p>hello@skillbridge.com</p>
@@ -26,7 +26,9 @@ const Footer = () => {
         </div>
         <div className="flex justify-between">
           <div>
-            <h2 className="text-xl mb-4 md:mb-2 font-semibold">Home</h2>
+            <h2 className="text-xl lg:text-base md:text-sm xs:text-xs mb-4 md:mb-2 font-semibold">
+              Home
+            </h2>
             <ul>
               <li>
                 <p>Benefits</p>
@@ -43,7 +45,9 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h2 className="text-xl mb-4 md:mb-2 font-semibold">About Us</h2>
+            <h2 className="text-xl lg:text-base md:text-sm mb-4 md:mb-2 font-semibold">
+              About Us
+            </h2>
             <ul>
               <li>
                 <p>Company</p>
@@ -57,7 +61,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h2 className="text-xl mb-4 md:mb-2 font-semibold">
+            <h2 className="text-xl lg:text-base md:text-sm mb-4 md:mb-2 font-semibold">
               Social Profiles
             </h2>
             <ul className="flex gap-2">
@@ -74,7 +78,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="text-center py-10 md:my-5 text-sm opacity-65">
+      <p className="text-center py-10 lg:py-7 md:py-4 sm:py-2 xs:py-1 md:my-5 sm:my-3 xs:my-1 text-sm opacity-65">
         © 2023 Skillbridge. All rights reserved.
       </p>
     </div>

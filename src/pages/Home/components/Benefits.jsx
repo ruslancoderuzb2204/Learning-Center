@@ -37,7 +37,7 @@ const Benefits = () => {
   return (
     <div>
       <Header title="Benefits" />
-      <div className="grid grid-cols-3 gap-8 md:gap-4 mt-8 md:mt-4">
+      <div className="grid grid-cols-3 md:grid-cols-2 gap-8 md:gap-4 xs:grid-cols-1 mt-8 md:mt-4">
         {data.map((item) => (
           <BenefitCard key={item.title} {...item} />
         ))}

@@ -8,7 +8,7 @@ import Testimonials from "./components/Testimonials";
 
 const Home = () => {
   return (
-    <div className="px-10">
+    <div className="px-10 lg:px-8 md:px-6 sm:px-4 xs:px-2">
       <Potential />
       <Brands />
       <div>

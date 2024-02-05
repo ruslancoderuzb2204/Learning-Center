@@ -12,7 +12,9 @@ export default {
 
       md: { max: "880px" },
 
-      sm: { max: "762px" },
+      sm: { max: "740px" },
+      xs: { max: "450px" },
+
     },
   },
   plugins: [],
