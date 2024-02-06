@@ -10,20 +10,30 @@ const Modal = ({ setOpenModal }) => {
         className="px-4 flex pb-4 flex-col gap-4"
         onClick={() => setOpenModal(false)}
       >
-        <li className="px-4 py-2 border-2 rounded-lg shadow-xl bg-slate-300 text-center cursor-pointer">
-          <Link to="/">Home</Link>
+        <li className="  border-2 rounded-lg shadow-xl bg-slate-300 text-center cursor-pointer">
+          <Link className="px-16 py-2 inline-block" to="/">
+            Home
+          </Link>
         </li>
-        <li className="px-4 py-2 border-2 rounded-lg shadow-xl bg-slate-300 text-center cursor-pointer">
-          <Link to="/courses">Courses</Link>
+        <li className=" border-2 rounded-lg shadow-xl bg-slate-300 text-center cursor-pointer">
+          <Link className="px-16 py-2 inline-block       " to="/courses">
+            Courses
+          </Link>
         </li>
-        <li className="px-4 py-2 border-2 rounded-lg shadow-xl bg-slate-300 text-center cursor-pointer">
-          <Link to="/about">About Us</Link>
+        <li className=" border-2 rounded-lg shadow-xl bg-slate-300 text-center cursor-pointer">
+          <Link className="px-12 py-2 inline-block " to="/about">
+            About Us
+          </Link>
         </li>
-        <li className="px-4 py-2 border-2 rounded-lg shadow-xl bg-slate-300 text-center cursor-pointer">
-          <Link to="/pricing">Pricing</Link>
+        <li className=" border-2 rounded-lg shadow-xl bg-slate-300 text-center cursor-pointer">
+          <Link className="px-16 py-2 inline-block" to="/pricing">
+            Pricing
+          </Link>
         </li>
-        <li className="px-4 py-2 border-2 rounded-lg shadow-xl bg-slate-300 text-center cursor-pointer">
-          <Link to="/contact">Contact</Link>
+        <li className=" border-2 rounded-lg shadow-xl bg-slate-300 text-center cursor-pointer">
+          <Link className="px-16 py-2 inline-block" to="/contact">
+            Contact
+          </Link>
         </li>
       </ul>
     </div>
