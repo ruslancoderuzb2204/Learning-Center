@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Modal = ({ setOpenModal }) => {
   return (
-    <div className="w-[200px] h-[auto] absolute transition duration-300 delay-500 animate-wiggle ease-in top-0 right-0 bg-white">
+    <div className="w-[200px] h-[auto] absolute top-0 right-0 bg-white">
       <div className="flex justify-end p-4">
         <button onClick={() => setOpenModal(false)}>❌</button>
       </div>

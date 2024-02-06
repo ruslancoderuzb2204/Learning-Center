@@ -15,12 +15,12 @@ const Header = () => {
         <i className="fa-solid text-white fa-arrow-right"></i>
       </div>
       <div className="py-5 text-md flex md:py-3 md:px-5   items-center justify-between px-10  mx-auto ">
-        <div className="flex items-center sm:block   gap-20 lg:gap-16 md:gap-10  ">
+        <div className="flex items-center sm:block   gap-20  lg:gap-10 md:gap-5  ">
           <NavLink to="/">
             <Logo />
           </NavLink>
           <nav className="sm:hidden">
-            <ul className="flex items-center gap-20 lg:gap-8 md:gap-4 ">
+            <ul className="flex items-center gap-20 2xl:gap-16 xl:gap-14 lg:gap-8 md:gap-5">
               <li>
                 <NavLink
                   className="px-4 py-2 rounded-md hover:bg-[#bab3b3]"
@@ -77,10 +77,10 @@ const Header = () => {
             <button onClick={toogleModal} className="p-2">
               <i className="fa-solid fa-bars "></i>
             </button>
-            <div>{openModal && <Modal setOpenModal={setOpenModal} />}</div>
           </div>
         </div>
       </div>
+            <div>{openModal && <Modal setOpenModal={setOpenModal} />}</div>
     </div>
   );
 };
