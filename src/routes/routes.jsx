@@ -25,7 +25,7 @@ const Routes = () => {
           children: [
             { index: true, element: <Courses /> },
             {
-              path: "coursesopen",
+              path: ":id",
               element: <CoursesOpenPage />,
             },
           ],

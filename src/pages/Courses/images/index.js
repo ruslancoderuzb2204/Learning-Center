@@ -13,8 +13,10 @@ import Img12 from "./img12.png";
 import Img13 from "./img13.png";
 import Img14 from "./img14.png";
 import Img15 from "./img15.png";
+import uiImg from "./UI.png";
 
 export {
+  uiImg,
   Img1,
   Img10,
   Img11,

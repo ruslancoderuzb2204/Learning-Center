@@ -18,6 +18,7 @@ import userImg3 from "./Img3.png";
 import userImg4 from "./Img4.png";
 
 export {
+
   brandImg1,
   userImg1,
   userImg2,

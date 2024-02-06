@@ -7,16 +7,16 @@ const Modal = ({ setOpenModal }) => {
         <button onClick={() => setOpenModal(false)}>❌</button>
       </div>
       <ul
-        className="px-4 flex pb-4 flex-col gap-4"
+        className="px-4 flex text-center  pb-4 flex-col gap-4"
         onClick={() => setOpenModal(false)}
       >
         <li className="  border-2 rounded-lg shadow-xl bg-slate-300 text-center cursor-pointer">
-          <Link className="px-16 py-2 inline-block" to="/">
+          <Link className="px-14 py-2 inline-block" to="/">
             Home
           </Link>
         </li>
         <li className=" border-2 rounded-lg shadow-xl bg-slate-300 text-center cursor-pointer">
-          <Link className="px-16 py-2 inline-block       " to="/courses">
+          <Link className="px-14 py-2 inline-block       " to="/courses">
             Courses
           </Link>
         </li>
@@ -26,12 +26,12 @@ const Modal = ({ setOpenModal }) => {
           </Link>
         </li>
         <li className=" border-2 rounded-lg shadow-xl bg-slate-300 text-center cursor-pointer">
-          <Link className="px-16 py-2 inline-block" to="/pricing">
+          <Link className="px-14 py-2 inline-block" to="/pricing">
             Pricing
           </Link>
         </li>
         <li className=" border-2 rounded-lg shadow-xl bg-slate-300 text-center cursor-pointer">
-          <Link className="px-16 py-2 inline-block" to="/contact">
+          <Link className="px-14 py-2 inline-block" to="/contact">
             Contact
           </Link>
         </li>

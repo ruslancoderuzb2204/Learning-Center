@@ -11,7 +11,7 @@ const RootLayout = () => {
       <main className="bg-[#F7F7F8] max-w-[1920px] mx-auto md:text-sm">
         <Outlet />
       </main>
-      <footer className="bg-white max-w-[1920px] mx-auto md:text-sm">
+      <footer className="bg-white max-w-[1920px] mx-auto  md:text-sm">
         <Footer />
       </footer>
     </>

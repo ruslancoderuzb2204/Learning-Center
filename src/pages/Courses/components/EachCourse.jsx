@@ -1,5 +1,4 @@
-import React from "react";
-import Header from "./CourseHeaader";
+import Header from "../../../containers/CourseHeaader";
 import CoursesInnerCard from "./CoursesInnerCard";
 
 const EachCourse = ({
@@ -11,11 +10,11 @@ const EachCourse = ({
   time,
   level,
   author,
-  theme,
+  theme,id
 }) => {
   return (
     <div className="bg-white p-10 xl:p-8 lg:p-6 md:p-4 sm:p-2 rounded-lg mb-10 lg:mb-8 md:mb-5 sm:mb-3">
-      <Header title={title} text={text} />
+      <Header title={title} text={text} id={id} />
       <div className="grid gap-6 xs:gap-2 grid-cols-3">
         <div>
           <img className="w-full" src={img1} alt="img" />
