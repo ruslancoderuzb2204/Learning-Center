@@ -6,11 +6,13 @@ import {
   CoursesOpenPage,
   Login,
   Pricing,
+  NotFound,
 } from "../pages";
 
 import RootLayout from "../layouts/RootLayout";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const Routes = () => {
+  const userData = JSON.parse(localStorage.getItem("userData"));
   const router = createBrowserRouter([
     {
       path: "/",
@@ -45,6 +47,10 @@ const Routes = () => {
         {
           path: "contact",
           element: <Contact />,
+        },
+        {
+          path: "*",
+          element: <NotFound />,
         },
       ],
     },

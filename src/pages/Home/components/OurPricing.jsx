@@ -17,7 +17,7 @@ const OurPricing = () => {
     <div>
       <Header title="Our Pricing" />
       <div className="bg-white">
-        <div className="grid grid-cols-2 md:grid-cols-1 gap-10 md:gap-5 p-10 lg:p-6">
+        <div className="grid grid-cols-2 sm:grid-cols-1 gap-10 md:gap-5 p-10 lg:p-6">
           <OurPricingCard
             title="Free Plan"
             freePlanTrue={freePlanTrue}
@@ -25,10 +25,10 @@ const OurPricing = () => {
             price="0"
           />
           <OurPricingCard
-            title="Free Plan"
+            title="Pro Plan"
             freePlanTrue={freePlanTrue}
             freePlanFalse={freePlanFalse}
-            price="0"
+            price="79"
           />
         </div>
       </div>

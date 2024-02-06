@@ -16,7 +16,7 @@ const Header = ({ title, text, id }) => {
           onClick={() => viewCourse(id)}
           className="px-4 text-base sm:text-sm font-semibold inline-block sm:mt-2 py-2 md:px-2 md:py-1 xs:mt-2 bg-slate-200 rounded-md"
         >
-          View All
+          View Course
         </button>
       </div>
     </div>

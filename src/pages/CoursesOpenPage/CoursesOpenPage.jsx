@@ -6,7 +6,6 @@ const CoursesOpenPage = () => {
   const { id } = useParams();
   const datas = data[id - 1];
   const { title, text, singleImg, theme } = datas;
-  console.log(datas);
   return (
     <div className="px-10 lg:px-8 md:px-6 sm:px-4 xs:px-2">
       <Header title={title} text={text} />

@@ -10,7 +10,7 @@ const Questions = () => {
     "Can I download the course materials for offline access?",
   ];
   return (
-    <div className="flex md:block justify-between  gap-10 md:gap-5 p-10 lg:p-6">
+    <div className="flex sm:block justify-between  gap-10 md:gap-5 p-10 lg:p-6">
       <div className="w-1/3 md:w-full">
         <h2 className="text-3xl lg:text-2xl md:text-xl sm:text-base font-semibold">
           Frequently <br /> Asked Questions
@@ -24,7 +24,7 @@ const Questions = () => {
         </button>
       </div>
       <div className="p-16 w-2/3 md:w-full md:mt-3 border-2  rounded-lg lg:p-10 md:p-5">
-        {data.map((item,index) => (
+        {data.map((item, index) => (
           <QuestionsCard key={index} item={item} />
         ))}
       </div>
