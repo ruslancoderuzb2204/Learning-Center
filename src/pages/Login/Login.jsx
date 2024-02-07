@@ -6,7 +6,7 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const navigate = useNavigate();
   const [password, setPassword] = useState("");
-
+  const [showPassword, setShowPassword] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
     localStorage.setItem("userData", JSON.stringify({ email, password }));
@@ -16,7 +16,7 @@ const Login = () => {
   };
 
   return (
-    <div className="grid grid-cols-2 sm:flex sm:flex-col sm:flex-col-reverse sm:gap-4 items-center px-10 lg:px-8 md:px-6 sm:px-4 xs:px-2">
+    <div className="grid grid-cols-2 sm:flex sm:flex-col-reverse sm:gap-4 items-center px-10 lg:px-8 md:px-6 sm:px-4 xs:px-2">
       <div className="sm:p-6">
         <h2 className="text-2xl lg:text-xl md:text-base mb-8 lg:mb-6 md:mb-4 font-semibold">
           Students Testimonals
@@ -54,20 +54,37 @@ const Login = () => {
           <label>
             Email
             <input
+              placeholder="Enter Your Email"
               className="w-full p-6 text-2xl sm:py-2 lg:text-xl mb-4 h-10 block border rounded-lg"
-              type="text"
+              type="email"
               value={email}
+              required
               onChange={(e) => setEmail(e.target.value)}
             />
           </label>
           <label>
             Password
-            <input
-              className="w-full p-6 md:p-4 text-2xl sm:py-2 lg:text-xl h-10 block  border rounded-lg"
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
+            <div className="flex items-center border rounded-lg">
+              <input
+                required
+                placeholder="Enter Your Password"
+                className="w-full p-6 md:p-4 text-2xl sm:py-2 lg:text-xl h-10 block rounded-lg outline-none  "
+                type={showPassword ? "text" : "password"}
+                value={password}
+                minLength={8}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <button
+                onClick={() => setShowPassword(!showPassword)}
+                type="button"
+              >
+                {!showPassword ? (
+                  <i className="fa-solid  fa-eye pr-4"></i>
+                ) : (
+                  <i className="fa-solid  fa-eye-slash pr-4"></i>
+                )}
+              </button>
+            </div>
           </label>
           <button className="w-full text-center sm:py-2 py-4 rounded-lg mt-4 bg-[#FF9500]">
             Login

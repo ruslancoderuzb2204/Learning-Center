@@ -4,7 +4,7 @@ const Potential = () => {
   return (
     <div className="flex flex-col justify-center items-center mx-auto">
       <h1 className="text-3xl lg:text-2xl md:text-xl font-semibold">
-        <i className="fa-solid bg-[#FF9500] rounded-md px-2 py-1 fa-bolt-lightning"></i>
+        <i className="fa-solid bg-[#FF9500] rounded-md px-2 py-1 fa-bolt"></i>
         <span className="text-[#FF9500]"> Unlock</span> Your Creative Potential
       </h1>
       <h2 className="text-2xl lg:text-xl md:text-md my-4 md:text-center md:my-2 sm:my-1">
