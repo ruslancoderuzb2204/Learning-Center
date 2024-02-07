@@ -10,6 +10,7 @@ const RootLayout = () => {
   useEffect(() => {
     if (!userData) {
       navigate("login");
+      alert("Please use for this site before Login!")
     } else {
       navigate("/");
     }
