@@ -8,8 +8,11 @@ const RootLayout = () => {
   const navigate = useNavigate();
   const location = useLocation();
   useEffect(() => {
-    userData && navigate("/");
-  }, []);
+    console.log(userData);
+    if (userData && location.pathname === "/login") {
+      navigate("/");
+    }
+  }, [location.pathname]);
   useEffect(() => {
     if (!userData && location.pathname !== "/login") {
       navigate("login");
