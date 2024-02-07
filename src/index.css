@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @import url(https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@100;200;300;400;500;600;800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@100;200;300;400;500;600;800&display=swap);
 
 body {
   font-family: "Be Vietnam", sans-serif;
-} */
+}
 header .active {
   background-color: aqua;
 }
