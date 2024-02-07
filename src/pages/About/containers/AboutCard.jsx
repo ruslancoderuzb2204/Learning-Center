@@ -2,7 +2,7 @@ import AboutInnerCard from "../components/AboutInnerCard";
 
 const AboutCard = ({ title, text, innerData }) => {
   return (
-    <div className="mb-20 lg:mb-10 md:mb-5">
+    <div data-aos="fade-left" className="mb-20 lg:mb-10 md:mb-5">
       <h2 className="text-2xl mb-4 md:mb-2  lg:text-xl md:text-base font-semibold">
         {title}
       </h2>

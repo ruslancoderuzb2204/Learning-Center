@@ -1,6 +1,9 @@
 const OurCoursesCard = ({ title, text, time, author, img, level }) => {
   return (
-    <div className="p-10 lg:p-7 md:p-5 rounded-lg  w-full h-full bg-white">
+    <div
+      data-aos="flip-up" data-aos-duration="500"
+      className="p-10 lg:p-7  md:p-5 rounded-lg  w-full h-full bg-white"
+    >
       <div>
         <img className="w-full" src={img} alt="img" />
       </div>

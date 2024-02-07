@@ -1,8 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Potential = () => {
   return (
-    <div className="flex flex-col justify-center items-center mx-auto">
+    <div
+      data-aos="fade-up"
+      data-aos-easing="ease-in"
+      data-aos-duration="1000"
+      className="flex flex-col justify-center items-center mx-auto"
+    >
       <h1 className="text-3xl lg:text-2xl md:text-xl font-semibold">
         <i className="fa-solid bg-[#FF9500] rounded-md px-2 py-1 fa-bolt"></i>
         <span className="text-[#FF9500]"> Unlock</span> Your Creative Potential
@@ -12,10 +18,12 @@ const Potential = () => {
       </h2>
       <p className="text-sm">Learn from Industry and Enhance Your Skills</p>
       <div className="flex md:text-xs mt-4 md:mt-2 gap-2">
-        <button className="bg-[#FF9500] rounded-md px-4 py-2">
+        <Link to="/courses" className="bg-[#FF9500] rounded-md px-4 py-2">
           Explore Courses
-        </button>
-        <button className="px-4 bg-white py-2 rounded-md">View Pricing</button>
+        </Link>
+        <Link to="/pricing" className="px-4 bg-white py-2 rounded-md">
+          View Pricing
+        </Link>
       </div>
     </div>
   );

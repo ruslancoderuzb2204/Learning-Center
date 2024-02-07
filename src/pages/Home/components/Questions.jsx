@@ -11,7 +11,7 @@ const Questions = () => {
   ];
   return (
     <div className="flex sm:block justify-between  gap-10 md:gap-5 p-10 lg:p-6">
-      <div className="w-1/3 md:w-full">
+      <div data-aos="zoom-out-down" className="w-1/3 md:w-full">
         <h2 className="text-3xl lg:text-2xl md:text-xl sm:text-base font-semibold">
           Frequently <br /> Asked Questions
         </h2>

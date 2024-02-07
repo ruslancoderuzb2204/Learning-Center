@@ -1,5 +1,4 @@
 import EachCourse from "../components/EachCourse";
-
 import { data } from "../../../dataBase/coursesData";
 const AllCourses = () => {
   

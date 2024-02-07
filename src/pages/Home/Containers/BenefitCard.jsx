@@ -1,6 +1,6 @@
 const BenefitCard = ({ num, title, text }) => {
   return (
-    <div className="p-8 md:p-4  bg-white rounded-lg">
+    <div data-aos="fade-up-right" data-aos-duration="500" className="p-8 md:p-4  bg-white rounded-lg">
       <p className="text-8xl lg:text-4xl md:2xl text-end font-bold">{num}</p>
       <h2 className="text-2xl lg:text-xl md:text-base sm:text-sm font-semibold mb-2">
         {title}

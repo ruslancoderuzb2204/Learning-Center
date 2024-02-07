@@ -18,8 +18,8 @@ const Brands = () => {
     brandImg7,
   ];
   return (
-    <>
-      <div className="bg-white flex sm:hidden items-center justify-between p-4  md:p-2 md:mt-5 rounded-lg mt-10">
+    <div data-aos="flip-right" className="px-4">
+      <div className="bg-white flex sm:hidden items-center justify-between p-4 w-full  md:p-2 md:mt-5 rounded-lg mt-10">
         {brandIcon.map((icon) => (
           <div className="px-6 py-4 md:px-3 md:py-2">
             <img src={icon} className="lg:w-16" alt="img" />
@@ -33,7 +33,7 @@ const Brands = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

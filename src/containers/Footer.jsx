@@ -3,7 +3,12 @@ import { Logo } from "../constants/Logo";
 
 const Footer = () => {
   return (
-    <div className="bg-white">
+    <div
+      data-aos="fade-up"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"
+      className="bg-white"
+    >
       <div className="text-lg lg:text-base md:text-sm  grid grid-cols-2 md:grid-cols-1 md:gap-4 px-20 lg:px-10 md:px-5 pt-20 lg:pt-10 md:pt-5">
         <div className="md:flex items-center gap-3">
           <NavLink to="/">

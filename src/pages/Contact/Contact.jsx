@@ -35,7 +35,12 @@ const Contact = () => {
         title="Contact Us"
         text="Welcome to SkillBridge's Pricing Plan page, where we offer two comprehensive options to cater to your needs: Free and Pro. We believe in providing flexible and affordable pricing options for our services. Whether you're an individual looking to enhance your skills or a business seeking professional development solutions, we have a plan that suits you. Explore our pricing options below and choose the one that best fits your requirements."
       />
-      <div className="p-16 xl:p-12 md:p-8  flex justify-between sm:block bg-white rounded-lg">
+      <div
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+        className="p-16 xl:p-12 md:p-8  flex justify-between sm:block bg-white rounded-lg"
+      >
         <ContactForm />
         <div className="flex flex-col sm:grid sm:grid-cols-2 xs:grid-cols-1 gap-4">
           {data.map((item) => (

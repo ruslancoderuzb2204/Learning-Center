@@ -2,7 +2,10 @@ import React from "react";
 
 const Join = () => {
   return (
-    <div className="p-12 lg:p-8 bg-white rounded-lg  flex xs:block gap-4 justify-between items-center">
+    <div
+      data-aos="fade-right"
+      className="p-12 lg:p-8 bg-white rounded-lg  flex xs:block gap-4 justify-between items-center"
+    >
       <div>
         <h2 className="text-4xl mb-4 font-semibold lg:text-2l md:text-xl">
           <span className="text-[#FF9500]">Together</span>, let's shape the

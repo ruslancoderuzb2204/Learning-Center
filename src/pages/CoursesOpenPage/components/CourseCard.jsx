@@ -3,7 +3,12 @@ import CourseInnerCard from "./CourseInnerCard";
 
 const CourseCard = ({ item, index }) => {
   return (
-    <div className="p-16 xl:p-12 lg:p-8 md:p-4 sm:p-2 bg-white rounded-lg">
+    <div
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="1000"
+      className="p-16 xl:p-12 lg:p-8 md:p-4 sm:p-2 bg-white rounded-lg"
+    >
       <p className="text-end text-6xl xl:text-4xl lg:text-2xl md:text-xl font-bold">
         0{index + 1}
       </p>

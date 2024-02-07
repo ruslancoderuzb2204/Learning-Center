@@ -5,7 +5,11 @@ const QuestionsCard = ({ item }) => {
   const [showAccordion, setShowAccordion] = useState(false);
   return (
     <>
-      <div className="flex text-xl lg:text-base md:text-sm items-center gap-2 justify-between mt-8 lg:mt-6 md:mt-4">
+      <div
+        data-aos="zoom-out-down"
+        data-aos-duration="500"
+        className="flex text-xl lg:text-base md:text-sm items-center gap-2 justify-between mt-8 lg:mt-6 md:mt-4"
+      >
         <h3>{item}</h3>
         <button
           onClick={() => setShowAccordion(!showAccordion)}

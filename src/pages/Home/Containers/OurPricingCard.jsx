@@ -2,7 +2,7 @@ import React from "react";
 
 const OurPricingCard = ({ title, price, freePlanFalse, freePlanTrue }) => {
   return (
-    <div className="p-8 lg:p-6 md:p-4 border-2 rounded-lg">
+    <div data-aos="zoom-in" data-aos-duration="500" className="p-8 lg:p-6 md:p-4 border-2 rounded-lg">
       <h2 className="text-2xl lg:text-xl md:text-base font-semibold border-2 rounded-lg w-full py-3 text-center bg-[#FFF9F0]">
         {title}
       </h2>

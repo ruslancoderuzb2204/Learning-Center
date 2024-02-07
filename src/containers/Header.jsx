@@ -19,14 +19,19 @@ const Header = () => {
   };
 
   return (
-    <div className="max-w-[1920px] relative mx-auto md:text-sm">
+    <div
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1000"
+      className="max-w-[1920px] relative mx-auto md:text-sm"
+    >
       <div className=" mx-auto flex items-center gap-4 justify-center text-white md:py-2 md:px-4 py-5 px-7 rounded-lg bg-[#FF9500]">
         <p>Free Courses 🌟 Sale Ends Soon, Get It Now</p>
         <i className="fa-solid text-white fa-arrow-right"></i>
       </div>
       <div className="py-5 text-md flex md:py-3 md:px-5 items-center justify-between px-10 mx-auto">
         <div className="flex items-center sm:block gap-20 lg:gap-10 md:gap-5">
-          <NavLink to="/">
+          <NavLink className="rounded-md" to="/">
             <Logo />
           </NavLink>
           <nav className="sm:hidden">

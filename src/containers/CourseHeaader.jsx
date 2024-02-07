@@ -6,7 +6,11 @@ const Header = ({ title, text, id }) => {
     navigate(`/courses/${id}`);
   };
   return (
-    <div className=" mb-16 lg:mb-8 md:mb-4 p-4 md:p-2">
+    <div
+      data-aos="fade-right"
+      data-aos-easing="ease-in-sine"
+      className=" mb-16 lg:mb-8 md:mb-4 p-4 md:p-2"
+    >
       <h2 className="text-3xl lg:text-2xl md:xl sm:text-base font-semibold">
         {title}
       </h2>

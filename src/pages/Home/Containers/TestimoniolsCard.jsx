@@ -1,6 +1,7 @@
+import "aos/dist/aos.css";
 const TestimoniolsCard = ({ img, name, text }) => {
   return (
-    <div className="bg-white p-12 lg:p-8 md:p-4 rounded-lg">
+    <div data-aos="fade-up" data-aos-duration="500" className="bg-white  p-12 lg:p-8 md:p-4 rounded-lg">
       <p className="text-xl lg:text-base md:text-sm font-medium mb-8 lg:mb-6 md:mb-4">
         {text}
       </p>
