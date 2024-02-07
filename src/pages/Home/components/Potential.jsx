@@ -9,7 +9,7 @@ const Potential = () => {
       data-aos-duration="1000"
       className="flex flex-col justify-center items-center mx-auto"
     >
-      <h1 className="text-3xl lg:text-2xl md:text-xl font-semibold">
+      <h1 className="text-3xl bg-white px-4 py-2 rounded-lg shadow-2xl lg:text-2xl md:text-xl font-semibold">
         <i className="fa-solid bg-[#FF9500] rounded-md px-2 py-1 fa-bolt"></i>
         <span className="text-[#FF9500]"> Unlock</span> Your Creative Potential
       </h1>
