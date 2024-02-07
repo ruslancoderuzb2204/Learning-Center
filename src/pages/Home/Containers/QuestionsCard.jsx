@@ -16,15 +16,17 @@ const QuestionsCard = ({ item }) => {
       </div>
       <div
         className={
-          showAccordion ? " flex justify-between items-center" : "hidden"
+          showAccordion
+            ? " flex justify-between items-center md:block"
+            : "hidden"
         }
       >
-        <p className="text-base p-4 rounded-md bg-blue-100 w-2/3">
+        <p className="text-base p-4 md:w-full md:mt-2 rounded-md bg-blue-100 w-2/3">
           Absolutely! You can enroll in multiple courses simultaneously and
           access them at your convenience.
         </p>
         <Link
-          className="px-4 py-2 inline-block mt-2 rounded-md bg-yellow-200"
+          className="px-4 py-2 inline-block mt-2 xs:w-full xs:text-center rounded-md bg-yellow-200"
           to="/contact"
         >
           Ask More
