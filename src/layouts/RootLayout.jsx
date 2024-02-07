@@ -7,11 +7,7 @@ const RootLayout = () => {
   const userData = JSON.parse(localStorage.getItem("userData"));
   const navigate = useNavigate();
   const location = useLocation();
-  useEffect(() => {
-    if (userData && location.pathname === "/login") {
-      navigate("/");
-    }
-  }, [location.pathname]);
+
   useEffect(() => {
     if (!userData && location.pathname !== "/login") {
       navigate("login");
