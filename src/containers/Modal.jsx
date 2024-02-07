@@ -4,7 +4,7 @@ const Modal = ({ setOpenModal }) => {
   return (
     <div
       data-aos="fade-down"
-      className="w-[200px] h-[auto]   absolute top-0 right-0 bg-white"
+      className="w-[200px] h-[auto] z-10   absolute top-0 right-0 bg-white"
     >
       <div className="flex justify-end p-4">
         <button onClick={() => setOpenModal(false)}>❌</button>
