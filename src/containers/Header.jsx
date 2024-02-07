@@ -14,7 +14,7 @@ const Header = () => {
     const confirmData = confirm("Are you Sure?");
     if (confirmData) {
       localStorage.removeItem("userData");
-      navigate("login");
+      navigate("/login");
     }
   };
 
@@ -25,7 +25,7 @@ const Header = () => {
       data-aos-duration="1000"
       className="max-w-[1920px] relative mx-auto md:text-sm"
     >
-      <div className=" mx-auto flex items-center gap-4 justify-center text-white md:py-2 md:px-4 py-5 px-7 rounded-lg bg-[#FF9500]">
+      <div className=" mx-auto flex items-center gap-4 justify-center text-white md:py-2 md:px-4 py-5 px-7 rounded-b-lg bg-[#FF9500]">
         <p>Free Courses 🌟 Sale Ends Soon, Get It Now</p>
         <i className="fa-solid text-white fa-arrow-right"></i>
       </div>

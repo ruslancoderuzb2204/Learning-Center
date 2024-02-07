@@ -86,7 +86,7 @@ const Login = () => {
               </button>
             </div>
           </label>
-          <button className="w-full text-center sm:py-2 py-4 rounded-lg mt-4 bg-[#FF9500]">
+          <button onClick={handleSubmit} className="w-full text-center sm:py-2 py-4 rounded-lg mt-4 bg-[#FF9500]">
             Login
           </button>
         </form>
