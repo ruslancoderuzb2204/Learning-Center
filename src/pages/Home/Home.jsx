@@ -1,3 +1,4 @@
+import QuestionsCard from "./Containers/QuestionsCard";
 import Benefits from "./components/Benefits";
 import Brands from "./components/Brands";
 import OurCourses from "./components/OurCourses";
