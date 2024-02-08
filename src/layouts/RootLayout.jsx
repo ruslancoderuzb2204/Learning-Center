@@ -9,6 +9,13 @@ const RootLayout = () => {
   const location = useLocation();
 
   useEffect(() => {
+    if (userData && location.pathname == "/login") {
+      navigate("/");
+      alert("You already have Signed Up!");
+    }
+  }, [location.pathname]);
+
+  useEffect(() => {
     if (!userData && location.pathname !== "/login") {
       navigate("login");
       alert("Please Login before using!");
