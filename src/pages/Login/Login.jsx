@@ -10,8 +10,6 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     localStorage.setItem("userData", JSON.stringify({ email, password }));
-    setEmail("");
-    setPassword("");
     navigate("/");
   };
 

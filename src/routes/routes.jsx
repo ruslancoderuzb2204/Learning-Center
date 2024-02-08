@@ -14,7 +14,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const Routes = () => {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "https://learningcenter-ruslan.vercel.app/",
       element: <RootLayout />,
       children: [
         {
