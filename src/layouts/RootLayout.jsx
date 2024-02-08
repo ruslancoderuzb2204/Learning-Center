@@ -13,7 +13,8 @@ const RootLayout = () => {
       navigate("login");
       alert("Please Login before using!");
     }
-  }, [userData, location]);
+  }, [location.pathname]);
+
   return (
     <div className="overflow-hidden ">
       <header className="bg-[#F7F7F8] max-w-[1920px] mx-auto md:text-sm">
